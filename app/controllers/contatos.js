@@ -1,10 +1,11 @@
 import Ember from 'ember';
 
+//Comentário para teste no git
 
 export default Ember.Controller.extend({
  	isFiltered: false,
 
- 	contatosFiltrado: Ember.computed('isFiltered', 
+ 	contatosFiltrado: Ember.computed('isFiltered',
  		function() {
  		let isFiltered = this.get('isFiltered');
  		if(isFiltered) {
